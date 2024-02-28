@@ -67,7 +67,7 @@ def process_video(video_path, output_dir, embeddings_dir, patch_size, step_size,
         np.save(embeddings_path, embeddings)
 
 
-video_path = "dogs.mp4"
+video_path = "tests/dogs_in_snow.mp4"
 output_dir = "video_patches"
 embeddings_dir = "video_embeddings"
 patch_size = 64
