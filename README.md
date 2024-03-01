@@ -6,7 +6,7 @@ Minimal, clean code for video/image tokenization. extracting patches from video 
 <img width="825" alt="Screenshot 2024-02-29 at 10 33 33" src="https://github.com/Jaykef/sora-patchnizer/assets/11355002/1aa23e7a-56ed-4e31-af4f-79e969734b0d"><br>
 
 
-The code here, extracts patches from video (.mp4), split the image patches into fixed-size patches, linearly embed each of them, add position embeddings, save the resulting sequence of vectors in a folder patch_embedding.
+The code here, first extracts image frames from a video (.mp4), split the image frames into smaller fixed-size patches, linearly embed each of them, add position embeddings, save the resulting sequence of vectors for use in a Transformer.
 
 The whole process builds on the approach introduced in the Vision Transformer paper: "An image is worth 16x16 words: Transformers for image recognition at scale."
 
