@@ -1,6 +1,6 @@
 # sora-patchnizer
 
-Minimal, clean code for extracting patches from video frames, as proposed in Sora technical report: "At a high level, we turn videos into patches by first compressing videos into a lower-dimensional latent space,19 and subsequently decomposing the representation into spacetime patches"
+Minimal, clean code for video/image tokenization. extracting patches from video frames, as proposed in Sora technical report: "At a high level, we turn videos into patches by first compressing videos into a lower-dimensional latent space,19 and subsequently decomposing the representation into spacetime patches"
 
 
 <img width="825" alt="Screenshot 2024-02-29 at 10 33 33" src="https://github.com/Jaykef/sora-patchnizer/assets/11355002/1aa23e7a-56ed-4e31-af4f-79e969734b0d"><br>
