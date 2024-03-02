@@ -31,6 +31,6 @@ def recover_patches(embeddings_dir, output_dir):
                         print(f"Error: Invalid embedding size for {embedding_name}")
 
 embeddings_dir = "patch_embeddings"
-recovered_patches_dir = "recovered_patches"
+recovered_patches_dir = "check"
 
 recover_patches(embeddings_dir, recovered_patches_dir)
