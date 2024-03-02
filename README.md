@@ -8,11 +8,11 @@ Minimal, clean code for video/image "patchnization". The code here, first extrac
 The files in this repo work as follows:
 
 <ul>
-  <li>1. <a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnizer.py">patchnizer.py</a> Holds code for simple implemenatation of the three stages involved (extract_image_frames from video, reduce image_frames_to_patches of fixed sizes 16x16 pixels, then linearly_embed_patches into a 1D vector sequence with additional position embeddings.</li>
+  <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnizer.py">patchnizer.py</a> Holds code for simple implemenatation of the three stages involved (extract_image_frames from video, reduce image_frames_to_patches of fixed sizes 16x16 pixels, then linearly_embed_patches into a 1D vector sequence with additional position embeddings.</li>
   
-  <li>2. <a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">patchnize.py</a> performs the whole process with custom configs (patch_size, created dirs, video - I am using the "dogs playing in snow" video by sora).</li>
+  <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">patchnize.py</a> performs the whole process with custom configs (patch_size, created dirs, video - I am using the "dogs playing in snow" video by sora).</li>
 
-  <li>3. <a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">train.py</a> Trains the resulting one-dimensional vector sequence (linear_patch_embeddings + position_embeddings) on Karpathy's minbpe (a minimal implementation of the byte-pair encoding algorithm).</li>
+  <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">train.py</a> Trains the resulting one-dimensional vector sequence (linear_patch_embeddings + position_embeddings) on Karpathy's minbpe (a minimal implementation of the byte-pair encoding algorithm).</li>
 </ul>
 
 
