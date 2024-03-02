@@ -19,6 +19,13 @@ The files in this repo work as follows:
 
 
 The whole process builds on the approach introduced in the Vision Transformer paper: <a href="https://arxiv.org/abs/2010.11929">"An image is worth 16x16 words: Transformers for image recognition at scale."</a>
+## Usage
+<ul>
+  1. First we patchnize: ``` python patchnize.py```
+  
+  2. Next we check: ``` python check.py``` 
+  3. Then we train: ``` python train.py```
+</ul>
 
 ## References
 <ul>
