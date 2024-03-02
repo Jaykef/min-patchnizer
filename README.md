@@ -16,7 +16,17 @@ The files in this repo work as follows:
 </ul>
 
 
-The whole process builds on the approach introduced in the Vision Transformer paper: <a href="https://arxiv.org/abs/2010.11929">An image is worth 16x16 words: Transformers for image recognition at scale."</a>
+The whole process builds on the approach introduced in the Vision Transformer paper: <a href="https://arxiv.org/abs/2010.11929">"An image is worth 16x16 words: Transformers for image recognition at scale."</a>
 
-<br>
+## References
+<ul>
+  <li><a href="https://openai.com/research/video-generation-models-as-world-simulators">SORA Technical Report</a></li>
+  
+  <li><a href="https://arxiv.org/abs/2010.11929">"An image is worth 16x16 words: Transformers for image recognition at scale", Alexey Dosovitskiy et al.</a></li>
+
+  <li><a href="https://github.com/karpathy/minbpe#:~:text=/-,minbpe,-Type">minbpe by karpathy</a></li>
+</ul>
+
+## License
+MIT
 
