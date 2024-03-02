@@ -4,6 +4,7 @@ Minimal, clean code for video/image "patchnization". The code here, first extrac
 
 <img width="825" alt="Screenshot 2024-02-29 at 10 33 33" src="https://github.com/Jaykef/sora-patchnizer/assets/11355002/1aa23e7a-56ed-4e31-af4f-79e969734b0d"><br>
 
-The whole process builds on the approach introduced in the Vision Transformer paper: "An image is worth 16x16 words: Transformers for image recognition at scale."
+The whole process builds on the approach introduced in the Vision Transformer paper: <a href="https://arxiv.org/abs/2010.11929">An image is worth 16x16 words: Transformers for image recognition at scale."</a>
 
-<br><img width="982" alt="Screenshot 2024-02-29 at 10 38 47" src="https://github.com/Jaykef/sora-patchnizer/assets/11355002/61f5a5a3-9cee-45c3-8a7f-6fc3598e9623">
+<br><img width="849" alt="Screenshot 2024-03-02 at 16 02 57" src="https://github.com/Jaykef/min-patchnizer/assets/11355002/446e283b-950d-4c46-babc-8d8c459f15fb">
+
