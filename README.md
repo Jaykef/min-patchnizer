@@ -13,6 +13,8 @@ The files in this repo work as follows:
   <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">patchnize.py</a>: performs the whole process with custom configs (patch_size, created dirs, video - I am using the "dogs playing in snow" video by sora).</li>
 
   <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">train.py</a>: Trains the resulting one-dimensional vector sequence (linear_patch_embeddings + position_embeddings) on Karpathy's minbpe (a minimal implementation of the byte-pair encoding algorithm).</li>
+
+  <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">check.py</a>: Checks to see if the patch embeddings match the original image patches - this basically just do the reverse of linear embedding.</li>
 </ul>
 
 
