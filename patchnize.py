@@ -2,7 +2,7 @@ from patchnizer import Patchnizer
 import time
 
 patch_size = 16
-video_path = "dogs.mp4"
+video_path = "tests/dogs_in_snow.mp4"
 output_dir_video_frames = "video_frames"
 output_dir_image_patches = "image_patches"
 output_dir_patch_embeddings = "patch_embeddings"
