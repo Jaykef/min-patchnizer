@@ -1,6 +1,6 @@
 # min-patchnizer
 
-Minimal, clean code for video/image "patchnization". The code here, first extracts still images (frames) from a video, splits the image frames into smaller fixed-size patches, linearly embeds each of them, adds position embeddings and then saves the resulting sequence of vectors for use in a Vision Transformer encoder. I tried training the resulting sequence vectors with Karpathy's minbpe and it took ~30s per frame to tokenize.
+Minimal, clean code for video/image "patchnization". The code here, first extracts still images (frames) from a video, splits the image frames into smaller fixed-size patches, linearly embeds each of them, adds position embeddings and then saves the resulting sequence of vectors for use in a Vision Transformer encoder. I tried training the resulting sequence vectors with Karpathy's minbpe and it took ~30s per frame to tokenize. The whole "pathnization" took ~10s for a 20s video on my M2 Air.
 
 ![IMG_5672](https://github.com/Jaykef/min-patchnizer/assets/11355002/de2eb521-58d5-4308-b061-19a32217cbb2)
 <br><br>
