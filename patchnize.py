@@ -1,6 +1,11 @@
 from patchnizer import Patchnizer
 import time
 
+"""
+Run this file to start patchnization
+Can play with the configs
+"""
+
 patch_size = 16
 video_path = "tests/dogs_in_snow.mp4"
 output_dir_video_frames = "video_frames"
