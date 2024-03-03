@@ -2,8 +2,8 @@ import os
 import time
 from minbpe import BasicTokenizer, RegexTokenizer
 """
-Trains minbpe tokenizer on resulting patch embeddings from Patchnizer for image patches of the first video frame.
-The whole training takes ~30 seconds on my M2 Macbook Air.
+Trains minbpe tokenizer on resulting patch embeddings (from Patchnizer) for image patches of the first video frame.
+The whole training took ~30 seconds on my M2 Macbook Air.
 Run patchnize.py before running this code.
 """
 
