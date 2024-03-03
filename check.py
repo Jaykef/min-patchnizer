@@ -3,6 +3,8 @@ import numpy as np
 import cv2
 
 def recover_patches(embeddings_dir, output_dir):
+    "Checks to see if the patch embeddings match the original image patches by recovering back the original image patches from patch_embeddings"
+    
     os.makedirs(output_dir, exist_ok=True)
     for folder_name in os.listdir(embeddings_dir):
         folder_path = os.path.join(embeddings_dir, folder_name)
