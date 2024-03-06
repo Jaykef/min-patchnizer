@@ -50,7 +50,7 @@ def recover_image_frames(image_patches_dir, output_dir):
                     patches.append(patch)
             # Stack patches vertically
             stacked_rows = []
-            for i in range(0, len(patches), 80):  # Assuming 80 patches per row (3600/80 = 45 rows)
+            for i in range(0, len(patches), 80):  # 80 patches per row (3600/80 = 45 rows) for a 1280x720 image frame divided into 16x16 tiles
                 row = np.hstack(patches[i:i+80])
                 stacked_rows.append(row)
             frame = np.vstack(stacked_rows)
