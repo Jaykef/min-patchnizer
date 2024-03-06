@@ -14,7 +14,7 @@ The files in this repo work as follows:
 
   <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">train.py</a>: Trains the resulting one-dimensional vector sequence (linear_patch_embeddings + position_embeddings) on Karpathy's minbpe (a minimal implementation of the byte-pair encoding algorithm).</li>
 
-  <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">check.py</a>: Checks to see if the patch embeddings match the original image patches - this basically just do the reverse of linear embedding.</li>
+  <li><a href="https://github.com/Jaykef/min-patchnizer/blob/main/patchnize.py">check.py</a>: Checks to see if the patch embeddings match the original image patches and then reconstructs the original image frames - this basically just do the reverse of linear embedding.</li>
 </ul>
 
 
