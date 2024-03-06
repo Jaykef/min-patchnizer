@@ -34,7 +34,35 @@ def recover_patches(embeddings_dir, output_dir):
                     else:
                         print(f"Error: Invalid embedding size for {embedding_name}")
 
+def recover_image_frames(image_patches_dir, output_dir):
+    """
+    Recovers the full image frames from the extracted image patches.
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    for folder_name in os.listdir(image_patches_dir):
+        folder_path = os.path.join(image_patches_dir, folder_name)
+        if os.path.isdir(folder_path):
+            patches = []
+            for patch_name in sorted(os.listdir(folder_path), key=lambda x: int(x.split('_')[-1].split('.')[0])):
+                if patch_name.endswith('.jpg'):
+                    patch_path = os.path.join(folder_path, patch_name)
+                    patch = cv2.imread(patch_path)
+                    patches.append(patch)
+            # Stack patches vertically
+            stacked_rows = []
+            for i in range(0, len(patches), 80):  # Assuming 80 patches per row (3600/80 = 45 rows)
+                row = np.hstack(patches[i:i+80])
+                stacked_rows.append(row)
+            frame = np.vstack(stacked_rows)
+            frame_resized = cv2.resize(frame, (1280, 720))  # Resize to 1280x720 pixels
+            output_path = os.path.join(output_dir, f"{folder_name}.jpg")
+            cv2.imwrite(output_path, frame_resized)
+            print(f"Recovered image frame saved: {output_path}")
+
 embeddings_dir = "patch_embeddings"
-recovered_patches_dir = "check"
+image_patches_dir = "image_patches"
+recovered_patches_dir = "check_image_patches"
+recovered_frames_dir = "check_image_frames"
 
 recover_patches(embeddings_dir, recovered_patches_dir)
+recover_image_frames(image_patches_dir, recovered_frames_dir)
