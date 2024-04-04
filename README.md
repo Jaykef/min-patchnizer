@@ -25,15 +25,18 @@ Youtube Video: <a href="https://youtu.be/eT1mJE4J38o?si=9uTeLo6eFoNmbJLt">Watch 
 ## Usage
 
 First patchnize:
-``` python patchnize.py
+```
+python patchnize.py
 ```
   
 Next check: 
-``` python check.py
+```
+python check.py
 ``` 
 
 Then train: 
-``` python train.py
+```
+python train.py
 ```
 
 ## References
